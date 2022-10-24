@@ -42,10 +42,62 @@ var t = "";
 
 The variable "t" is then declared and appended to in the for... loop declared within dF
 ```js
-	for(i=0;i<s1.length;i++){
+for(i=0;i<s1.length;i++){
         t+=String.fromCharCode(s1.charCodeAt(i)-s.substr(s.length-1,1));
-    };
+};
 ```
 This line iterates through the string and gets the character code at the value. The interesting part is that this character code is shifted up by 5.
 The cipher is undone by using the s.length substring, which equals to 5.
+
+This leaves us with our decrypted string
+
+```html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta property="title" content="uwu.me">
+        <meta property="description" content="uwu.me">
+        <meta property="url" content="https://uwu.me">
+
+        <meta property="og:title" content="uwu.me">
+        <meta property="og:site_name" content="uwu.me">
+        <meta property="og:description" content="uwu.me">
+        <meta property="og:image" content="https://uwu.me/assets/media/ds_icon.png">
+
+        <title>uwu.me</title>
+        <link rel="icon" type="image/x-icon" href="assets/media/favicon.ico">
+
+        <link rel="stylesheet" href="assets/css/styles.css" type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" type='text/css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <video id="background_video" playsinline loop muted></video>
+        <div id="video_cover"></div>
+        <div id="overlay"></div>
+
+        <div class="viewport">
+            <p id="timestamp">00:00:00</p>
+            <p class="text">uwu.me</p>
+            <div class="buttons">
+                <i class="fa-solid fa-play hvr-grow" onclick="toggle_mute()"></i>
+                <a href="https://git.uwu.me/" target="_blank"><i class="fa-brands fa-gitlab hvr-grow"></i></a>
+            </div>
+
+            <div id="footer">
+                <p class="small_text">
+                    inquiries - <a href = "mailto:i@uwu.me">i@uwu.me</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- https://github.com/rishabhp/bideo.js -->
+        <script src="assets/js/bideo.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/resources.js"></script>
+    </body>
+</html>```
 
