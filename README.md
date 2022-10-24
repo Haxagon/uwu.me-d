@@ -1,4 +1,4 @@
-# uwu.me-d
+### uwu.me loader.js
 
 # Start
 
@@ -12,7 +12,7 @@ Upon further inspection, the initial line is unescaped and converted to hex byte
 <script language="javascript">
 function dF(s){
 	var s1=unescape(s.substr(0,s.length-1)); 
-    var t='';
+    	var t='';
 	for(i=0;i<s1.length;i++){
         t+=String.fromCharCode(s1.charCodeAt(i)-s.substr(s.length-1,1));
     };
