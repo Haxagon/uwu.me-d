@@ -9,7 +9,6 @@ We load up the site, open dev console. Checking the “Network” tab after a re
 Upon further inspection, the initial line is unescaped and converted to hex bytes. We can use a console.log to see what it’s doing.
 
 ```js
-<script language="javascript">
 function dF(s){
 	var s1=unescape(s.substr(0,s.length-1)); 
     	var t='';
@@ -18,7 +17,6 @@ function dF(s){
     };
     document.write(unescape(t));
 }
-</script>
 ```
 
 This exposes a function that takes a variable labelled "s". This variable is again unescaped and converts any hexbytes within to their normal form. It also takes several substrings from the "s" variable. 
